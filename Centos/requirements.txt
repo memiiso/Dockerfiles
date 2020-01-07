@@ -1,0 +1,26 @@
+numpy>=1.16.4
+requests>=2.21.0
+pandas>=0.24.2
+setuptools>=39.1.0
+SQLAlchemy>=1.2.12
+google-api-core>=1.14.3
+google-api-python-client>=1.7.11
+google-auth-httplib2
+google-auth-oauthlib>=0.4.1
+google-auth==1.6.0
+psycopg2-binary
+coverage>=5.0.1
+pyspark>=2.4.4
+mysql-connector
+pylint
+awscli>=1.16.306
+boto3>=1.10.41
+botocore>=1.13.42
+s3transfer>=0.2.0
+# blindspin
+https://github.com/MorrisChuang/blindspin/archive/patch-1.zip
+testcontainers>=2.5
+py4j>=0.10.7
+https://github.com/memiiso/pyliquibase/archive/master.zip
+pymysql
+urllib3==1.24.3 # same version as tableau tableauserverclient module
