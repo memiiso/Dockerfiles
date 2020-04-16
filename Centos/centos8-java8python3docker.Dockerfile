@@ -8,7 +8,7 @@ RUN dnf -y --quiet update
 RUN dnf -y --quiet install dnf-plugins-core wget zip git ca-certificates openssh-clients --nogpgcheck
 RUN dnf -y --quiet install java-1.8.0-openjdk --nogpgcheck
 RUN dnf -y --quiet install python3 python3-pip python3-wheel --nogpgcheck
-RUN dnf -y --quiet install mysql postgresql --nogpgcheck
+RUN dnf -y --quiet install mysql postgresql libpq-devel postgresql gcc python3-devel --nogpgcheck
 
 ### setup python3
 RUN alternatives --set python /usr/bin/python3
