@@ -3,7 +3,7 @@ MAINTAINER memiiso <gel.yine.gel@gmail.com>
 ### setup applications
 RUN dnf -y --quiet update
 RUN dnf -y --quiet install wget zip git java-1.8.0-openjdk dnf-plugins-core
-RUN dnf -y --quiet install python3 python3-pip python3-wheel libpq-devel postgresql gcc python3-devel --nogpgcheck
+RUN dnf -y --quiet install python38 python38-pip python38-wheel libpq-devel postgresql gcc python38-devel --nogpgcheck
 
 ### setup default python
 RUN alternatives --set python /usr/bin/python3

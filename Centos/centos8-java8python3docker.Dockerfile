@@ -7,8 +7,8 @@ RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client
 RUN dnf -y --quiet update
 RUN dnf -y --quiet install dnf-plugins-core wget zip git ca-certificates openssh-clients --nogpgcheck
 RUN dnf -y --quiet install java-1.8.0-openjdk --nogpgcheck
-RUN dnf -y --quiet install python3 python3-pip python3-wheel --nogpgcheck
-RUN dnf -y --quiet install mysql postgresql libpq-devel postgresql gcc python3-devel --nogpgcheck
+RUN dnf -y --quiet install python38 python38-pip python38-wheel --nogpgcheck
+RUN dnf -y --quiet install mysql postgresql libpq-devel postgresql gcc python38-devel --nogpgcheck
 
 ### setup python3
 RUN alternatives --set python /usr/bin/python3
@@ -36,6 +36,7 @@ RUN rm -rf ~/.cache \
 
 RUN docker --version
 RUN dockerd --version
+RUN python --version
 
 ENTRYPOINT ["docker-entrypoint.sh"]
 CMD ["/bin/bash" , "-l"]
